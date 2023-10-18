@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: api-teste-2
+  description: "homologTeste"
+  annotations:
+    github.com/project-slug: veecode-bot/api-homolog-2
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "api-teste-2"
+    vault.io/secrets-path: "api-teste-2"
+    grafana/tag-selector: "api-teste-2"
+    grafana/alert-label-selector: "alertname=api-teste-2"
+    argocd/proxy-url: '/argocd/api'
+    argocd/app-name: "api-teste-2"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/admin"
+
+
+
